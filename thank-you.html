@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | Dean Law</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .thankyou-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--purple-deep);
+      position: relative;
+      overflow: hidden;
+    }
+    .thankyou-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .thankyou-card {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 600px;
+      padding: 80px 60px;
+      border: 1px solid rgba(201,168,76,0.2);
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(8px);
+    }
+    .thankyou-icon {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 32px;
+      color: var(--purple-deep);
+    }
+    .thankyou-card h1 {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .thankyou-card h1 em { font-style: italic; color: var(--gold-light); }
+    .thankyou-card p {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+    .thankyou-divider {
+      width: 60px; height: 1px;
+      background: var(--gold);
+      margin: 32px auto;
+    }
+    .thankyou-detail {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 48px;
+    }
+    .thankyou-detail-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.15);
+      padding: 14px 20px;
+      text-align: left;
+    }
+    .thankyou-detail-item svg { color: var(--gold); flex-shrink: 0; }
+    .thankyou-detail-item span {
+      font-size: 0.84rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.75);
+    }
+  </style>
+</head>
+<body>
+
+  <header id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-emblem">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div class="nav-logo-text">Dean Law<span>Attorney at Law</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="practice-areas.html">Practice Areas</a></li>
+      <li><a href="attorney.html">The Attorney</a></li>
+      <li><a href="why-dean-law.html">Why Dean Law</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html" class="nav-cta">Consultation</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <section class="thankyou-section">
+    <div class="thankyou-card">
+      <div class="thankyou-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <h1>Thank <em>You</em></h1>
+      <div class="thankyou-divider"></div>
+      <p>Your consultation request has been received. Mr. Dean or a member of his team will review your matter and contact you within one business day.</p>
+
+      <div class="thankyou-detail">
+        <div class="thankyou-detail-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Your information is kept strictly confidential and protected by attorney-client privilege.</span>
+        </div>
+        <div class="thankyou-detail-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Expected response time: within one business day (Monday–Friday, 9AM–6PM ET).</span>
+        </div>
+        <div class="thankyou-detail-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>A confirmation has been sent to your email address for your records.</span>
+        </div>
+      </div>
+
+      <a href="index.html" class="btn-primary" style="display:inline-flex;">
+        <span>Return to Dean Law</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Client Testimonials — Dean Law, Philadelphia. Read what clients say about Christopher W. Dean, Esq." />
+  <title>Testimonials | Dean Law</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+      background: var(--ivory-dark);
+      margin-top: 60px;
+    }
+    .testimonial-full-card {
+      background: var(--white);
+      padding: 52px 48px;
+      position: relative;
+      transition: box-shadow 0.3s;
+    }
+    .testimonial-full-card:hover { box-shadow: var(--shadow-gold); }
+    .tfc-quote {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      color: var(--gold);
+      opacity: 0.15;
+      line-height: 0.6;
+      margin-bottom: 20px;
+    }
+    .tfc-text {
+      font-family: var(--font-accent);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--text-mid);
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+    .tfc-stars { display: flex; gap: 4px; margin-bottom: 20px; }
+    .tfc-stars span { color: var(--gold); font-size: 0.85rem; }
+    .tfc-divider { width: 40px; height: 1px; background: var(--gold); margin-bottom: 20px; }
+    .tfc-name {
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+    }
+    .tfc-role {
+      font-size: 0.76rem;
+      font-weight: 300;
+      color: var(--text-light);
+      letter-spacing: 0.05em;
+    }
+    .tfc-tag {
+      position: absolute;
+      top: 28px; right: 28px;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.3);
+      padding: 4px 10px;
+    }
+    @media (max-width: 768px) { .testimonials-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-emblem">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div class="nav-logo-text">Dean Law<span>Attorney at Law</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="practice-areas.html">Practice Areas</a></li>
+      <li><a href="attorney.html">The Attorney</a></li>
+      <li><a href="why-dean-law.html">Why Dean Law</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html" class="nav-cta">Consultation</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <p class="page-hero-eyebrow">Client Testimonials</p>
+      <h1>What Our Clients <em>Say</em></h1>
+      <p class="page-hero-sub">The measure of a law firm is not its credentials alone — it is the outcomes delivered and the trust earned by every client it has the privilege of serving.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">Testimonials</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:80px 0 120px;background:var(--ivory);">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:16px;" class="reveal">
+        <p class="section-eyebrow" style="justify-content:center;">Client Experiences</p>
+        <h2 style="font-family:var(--font-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:400;color:var(--text-dark);">Trusted by Clients Across <em style="font-style:italic;color:var(--purple-light);">Philadelphia</em></h2>
+        <div class="gold-divider centered"></div>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-full-card reveal">
+          <div class="tfc-tag">Real Estate Law</div>
+          <div class="tfc-quote">"</div>
+          <div class="tfc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="tfc-text">Christopher Dean handled our commercial property acquisition with exceptional thoroughness and professionalism. His deep knowledge of Philadelphia real estate law meant every detail was addressed before we even thought to ask. The transaction closed flawlessly and on schedule.</p>
+          <div class="tfc-divider"></div>
+          <div class="tfc-name">Margaret &amp; Thomas H.</div>
+          <div class="tfc-role">Commercial Real Estate Clients — Center City, Philadelphia</div>
+        </div>
+
+        <div class="testimonial-full-card reveal" data-delay="100">
+          <div class="tfc-tag">Civil Litigation</div>
+          <div class="tfc-quote">"</div>
+          <div class="tfc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="tfc-text">When our business faced a complex civil dispute, we needed an attorney who could think strategically while staying composed under pressure. Christopher delivered on every front. His courtroom presence and preparation were second to none. We prevailed completely.</p>
+          <div class="tfc-divider"></div>
+          <div class="tfc-name">David K.</div>
+          <div class="tfc-role">Business Litigation Client — Philadelphia, PA</div>
+        </div>
+
+        <div class="testimonial-full-card reveal" data-delay="200">
+          <div class="tfc-tag">Tax Litigation</div>
+          <div class="tfc-quote">"</div>
+          <div class="tfc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="tfc-text">Mr. Dean navigated an incredibly complex property tax appeal that other firms said was unwinnable. His insider knowledge of how the City of Philadelphia handles these matters made all the difference. We saved tens of thousands of dollars in assessments.</p>
+          <div class="tfc-divider"></div>
+          <div class="tfc-name">Renata S.</div>
+          <div class="tfc-role">Tax Litigation Client — Rittenhouse Square, Philadelphia</div>
+        </div>
+
+        <div class="testimonial-full-card reveal" data-delay="300">
+          <div class="tfc-tag">Real Estate Law</div>
+          <div class="tfc-quote">"</div>
+          <div class="tfc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="tfc-text">I hired Dean Law for a landlord-tenant dispute that had already dragged on for months with my previous counsel. Within weeks, Mr. Dean had restructured our approach entirely and reached a favorable resolution I hadn't thought possible. I only wish I had called sooner.</p>
+          <div class="tfc-divider"></div>
+          <div class="tfc-name">James &amp; Patricia M.</div>
+          <div class="tfc-role">Landlord-Tenant Matter — Fishtown, Philadelphia</div>
+        </div>
+
+        <div class="testimonial-full-card reveal" data-delay="100">
+          <div class="tfc-tag">Municipal Law</div>
+          <div class="tfc-quote">"</div>
+          <div class="tfc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="tfc-text">Dealing with the City of Philadelphia is intimidating for most people. Mr. Dean speaks their language because he used to work with them. That credibility and knowledge made our code enforcement matter resolve quickly and favorably. An extraordinary attorney.</p>
+          <div class="tfc-divider"></div>
+          <div class="tfc-name">Robert T.</div>
+          <div class="tfc-role">Municipal Law Client — South Philadelphia</div>
+        </div>
+
+        <div class="testimonial-full-card reveal" data-delay="200">
+          <div class="tfc-tag">Civil Litigation</div>
+          <div class="tfc-quote">"</div>
+          <div class="tfc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="tfc-text">Mr. Dean's analytical mind and calm demeanor under fire gave us tremendous confidence throughout our contract dispute. He was transparent about the risks, clear about the strategy, and relentless in execution. The result exceeded our expectations at every level.</p>
+          <div class="tfc-divider"></div>
+          <div class="tfc-name">Eleanor V.</div>
+          <div class="tfc-role">Contract Dispute Client — Philadelphia Metropolitan Area</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:var(--purple-mid);padding:80px 0;">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-family:var(--font-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:400;color:var(--white);margin-bottom:20px;">Ready to Become Our Next <em style="font-style:italic;color:var(--gold-light);">Success Story?</em></h2>
+      <p style="font-size:0.92rem;font-weight:300;color:rgba(255,255,255,0.6);max-width:500px;margin:0 auto 40px;line-height:1.8;">Schedule a confidential consultation to discuss your legal matter with Christopher W. Dean, Esq.</p>
+      <a href="contact.html" class="btn-primary">
+        <span>Request a Consultation</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand"><div class="footer-brand-name">Dean Law<span>Attorney at Law</span></div><p>A boutique Philadelphia law firm providing distinguished legal counsel in real estate, civil litigation, and municipal matters.</p><p class="footer-disclaimer">The information on this website is for general informational purposes only and does not constitute legal advice.</p></div>
+        <div class="footer-col"><h5>Practice Areas</h5><ul><li><a href="real-estate-law.html">Real Estate Law</a></li><li><a href="civil-litigation.html">Civil Litigation</a></li><li><a href="municipal-law.html">Municipal Law</a></li></ul></div>
+        <div class="footer-col"><h5>The Firm</h5><ul><li><a href="attorney.html">Christopher W. Dean</a></li><li><a href="why-dean-law.html">Why Dean Law</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="contact.html">Consultation</a></li></ul></div>
+        <div class="footer-col"><h5>Contact</h5><ul><li><a href="#">Philadelphia, PA</a></li><li><a href="mailto:christopherwdean01@outlook.com">christopherwdean01@outlook.com</a></li><li><a href="contact.html">Schedule a Consultation</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span id="footerYear"></span> Dean Law. All rights reserved. Christopher W. Dean, Esq.</p><div class="footer-bar-links"><a href="#">Privacy Policy</a><a href="#">Disclaimer</a></div></div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
